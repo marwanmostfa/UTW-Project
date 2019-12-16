@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<img src="~/images/welcome2.png" style="width:30%" />
+<div>
+
+
+    <label style="font-stretch:expanded ;font-style:italic ;font-size:larger ;font-weight:bold ; background-position:inherit
+    ;background-color:Black; color:white ;padding:5px 5px 5px 5px ;border-radius:6px">
+
+        Your Stock Chart Now :
+
+    </label>
+</div>
+<div>
+
+    <iframe src="~/WebForm1.aspx " width="600" height="400" scrolling="no" style="border-color:black ;border-radius:6px"></iframe>
+</div>
+
+<h6></h6>
+
+
+<div>
+    <label style="font-stretch:expanded ;font-style:italic ;font-size:larger ;font-weight:bold ; background-position:inherit
+    ;background-color:Black; color:white ;padding:5px 5px 5px 5px ;border-radius:6px">
+
+        Stocks' Prices :
+
+    </label>
+</div>
+<div>
+    <iframe src="~/WebForm2.aspx  " width="600" height="400 " scrolling="no" style="border-color:black;border-radius:6px "></iframe>
+</div>
+<h2></h2>
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+    {
+
+        <button style="color:blue"><a href="javascript:document.getElementById('logoutForm').submit()">Logout</a> </button>
+
+    }
+
+
+}
+
+<input type="button" value="Add Order" style="color:blue" onclick="window.location='@Url.Action("Index", "order_trans")'" />
+
+
+
+
