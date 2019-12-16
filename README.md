@@ -1,6 +1,6 @@
 # UTW-Project round 11
 
-### Requirement:
+### Requirements:
 - Registration: User has to register to have access to the system trading and administrating functionality.
   1. To Register must user must enter his name , email , Username and password (Encrypted)
   2. Also to complete the registration user chooses a question from a list of question defined in the system and give the answer (Encrypted) of this question. This question is used when the user forgets the password, to verify the user.
