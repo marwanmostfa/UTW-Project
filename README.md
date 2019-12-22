@@ -44,3 +44,11 @@
     a. Status (Active Or Locked)
     b. Email
     c. Username
+
+
+### Snapshots of some pages of the Website
+
+![Alt text](/dashboard.PNG?raw=true "2019 update")
+<br/><br/>
+
+![Alt text](/utwAdmin.PNG?raw=true "2019 update")
